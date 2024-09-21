@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     // alignContent: "flex-start",
     justifyContent: "space-between",
-    marginVertical: 16,
+    marginTop: 12,
   },
   left_container: {
     flexDirection: "row",
