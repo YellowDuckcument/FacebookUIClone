@@ -31,7 +31,7 @@ const IconGroupBar = () => {
   );
 };
 
-const ButtonIcon = ({
+export const ButtonIcon = ({
   BackgroundColor,
   Icon,
   IconColor,

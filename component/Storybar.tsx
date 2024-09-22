@@ -1,21 +1,25 @@
 import { View, Text, Image, FlatList, FlatListComponent } from "react-native";
 import React from "react";
+import { ImageSlider } from "../Data/SilderData";
+import SliderItem from "./SliderItem";
+import CircularlIcon from "./CircularIcon";
 
 const Storybar = () => {
   return (
     <View
       style={{
-        width: "100%",
-        height: 180,
         flexDirection: "row",
-        justifyContent: "center",
-        gap: 8,
+        justifyContent: "flex-start",
+        alignItems: "flex-end",
       }}>
       <FlatList
         data={ImageSlider}
         renderItem={({ item, index }) => (
-          <Slideritem item={item} index={index} />
+          <SliderItem item={item} index={index} />
         )}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        ItemSeparatorComponent={() => <View style={{ width: 20 }} />}
       />
     </View>
   );
